@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact - Hamza ZAY</title>
+    <link rel="stylesheet" href="css2.css" />
+    <script src="js2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>Hamza ZAY</h1>
+        <nav>
+          <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="Apropos.html">À propos</a></li>
+            <li><a href="education.html">Parcours</a></li>
+            <li><a href="experience.html">Expériences</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contactez-moi</h2>
+        <form id="form" method="post" onsubmit="verif1(event)">
+          <div class="form-group">
+            <label for="name">Nom(*) :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" />
+            <label for="email">E-mail(*) :</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Votre e-mail"
+            />
+            <br /><br />
+
+            <label for="request-type">Type de demande(*) :</label>
+            <select id="ch" name="request-type">
+              <option value="choix" aria-placeholder="choix">choix</option>
+              <option value="interview">Entretien d'embauche</option>
+              <option value="internship">Proposition de stage</option>
+              <option value="recruitment">Recrutement pour un poste</option>
+              <option value="partnership">Proposition de partenariat</option>
+              <option value="technical-expertise">
+                Demande d'expertise technique
+              </option>
+              <option value="info">Demande d'information</option>
+            </select>
+            <br /><br /><br />
+
+            <label for="score">Score d'adéquation au poste :</label>
+            <input
+              type="text"
+              id="score"
+              name="score"
+              placeholder="Echelle de 1 à 10"
+            /><br /><br />
+
+            <label for="message">Message :</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="sujet de votre message"
+            ></textarea>
+
+            <label for="file-upload">Joindre un fichier :</label>
+            <input type="file" id="file-upload" name="file-upload" />
+          </div>
+          <br />
+
+          <button type="submit" class="btn">Envoyer</button>
+          <button type="reset" class="btn">Réinitialiser</button>
+          <br /><br /><br />
+
+          <a href="tel:+21651837525" class="call-button">Appeler maintenant</a>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Hamza ZAY - Tous droits réservés.</p>
+        <p>hamza.ZAY@esprit.tn</p>
+        <p>+00216 51 837 525</p>
+      </div>
+    </footer>
+  </body>
+</html>
